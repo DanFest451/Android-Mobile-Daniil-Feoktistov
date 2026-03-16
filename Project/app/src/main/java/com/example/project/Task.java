@@ -1,6 +1,8 @@
 package com.example.project;
 
-public class Task {
+import java.io.Serializable;
+
+public class Task implements Serializable {
     private String title;
     private String description;
     private String priority;
@@ -47,6 +49,6 @@ public class Task {
 
     @Override
     public String toString() {
-        return title + " | " + priority + " | " + status;
+        return title + "\n" + priority + " | " + status;
     }
 }
